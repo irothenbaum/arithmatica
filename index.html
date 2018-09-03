@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmatica</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./game.js"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="scroll-container">
+            <div id="range-max"></div>
+            <div id="scroll-bar"></div>
+            <div id="range-min"></div>
+        </div>
+        <div id="guess" class="decimal-container">
+            <span class="int"></span><span class="decimal"></span>
+        </div>
+
+        <div id="main-container">
+            <div id="numbers-container">
+
+            </div>
+            <div id="solution" class="decimal-container">
+                <span class="int"></span><span class="decimal"></span>
+            </div>
+            <div id="points-to-award"></div>
+            <div id="speed-bonus">Fast!</div>
+            <div id="accuracy-bonus">Great!</div>
+        </div>
+
+        <div id="settings" class="modal-container">
+            <div class="modal">
+                <div>
+                    <label>Min number</label>
+                    <input type="number" name="min" step="1">
+                </div>
+                <div>
+                    <label>Max number</label>
+                    <input type="number" name="max" step="1">
+                </div>
+                <div>
+                    <label>Equation terms</label>
+                    <input type="number" name="terms" step="1">
+                </div>
+                <div>
+                    <label>Decimals</label>
+                    <input type="number" name="decimals" step="1">
+                </div>
+                <button id="start-new-game">Start Game</button>
+            </div>
+        </div>
+
+        <div id="countdown-timer" class="modal-container">
+            <div class="modal">
+                3
+            </div>
+        </div>
+
+        <div id="score"></div>
+        <div id="timer" class="decimal-container">
+            <span class="int"></span><span class="decimal"></span>
+        </div>
+
+        <div id="settings-toggle">&hellip;</div>
+    </div>
+
+    <script type="text/html" id="number-template">
+        <div class="number decimal-container">
+            <span class="int"></span><span class="decimal"></span>
+        </div>
+    </script>
+</body>
+</html>
